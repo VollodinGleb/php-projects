@@ -7,7 +7,7 @@
             $dropdownName = 'dropdown' . $i;
 
             if (isset($_POST[$checkboxName])) {
-                // $selectedOption = $_POST[$dropdownName];
+                $selectedOption = $_POST[$dropdownName];
                 $data .= htmlspecialchars($_POST[$dropdownName]) . "\n";
             }
         }
